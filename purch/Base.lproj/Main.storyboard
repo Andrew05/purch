@@ -32,19 +32,33 @@
                                 <rect key="frame" x="279" y="562" width="42" height="30"/>
                                 <state key="normal" title="Log In"/>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CfN-Q7-g02">
+                                <rect key="frame" x="260" y="36" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="3D6-fF-Tvt"/>
+                                    <constraint firstAttribute="height" constant="80" id="UnA-Wk-F5b"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="k97-ku-33z" firstAttribute="top" secondItem="2dm-Ke-wAL" secondAttribute="bottom" constant="15" id="2Bd-Xz-KEZ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="k97-ku-33z" secondAttribute="trailing" id="Jya-28-4Lx"/>
+                            <constraint firstItem="CfN-Q7-g02" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Lbf-2d-lUT"/>
                             <constraint firstItem="qO9-v1-CCG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vfd-OF-rDw"/>
                             <constraint firstItem="2dm-Ke-wAL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Vsv-Ba-JrE"/>
                             <constraint firstItem="k97-ku-33z" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="iNr-Zb-0YV"/>
+                            <constraint firstItem="CfN-Q7-g02" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="lZ4-gh-gjM"/>
                             <constraint firstAttribute="trailingMargin" secondItem="2dm-Ke-wAL" secondAttribute="trailing" id="qyY-ym-vXa"/>
                             <constraint firstItem="2dm-Ke-wAL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="228" id="sSh-sX-o31"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qO9-v1-CCG" secondAttribute="bottom" constant="8" id="xU1-1a-od1"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="passwordTextField" destination="k97-ku-33z" id="Oi0-ox-b1h"/>
+                        <outlet property="purchLogo" destination="CfN-Q7-g02" id="drJ-Sc-lXL"/>
+                        <outlet property="usernameTextField" destination="2dm-Ke-wAL" id="LSm-Pa-6gN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -210,7 +224,19 @@
                     <view key="view" contentMode="scaleToFill" id="dpV-Lc-1uq">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LUI-oy-KAR">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eTc-Rl-uV6" firstAttribute="top" secondItem="LUI-oy-KAR" secondAttribute="bottom" id="CXI-NU-gN5"/>
+                            <constraint firstItem="LUI-oy-KAR" firstAttribute="leading" secondItem="dpV-Lc-1uq" secondAttribute="leadingMargin" constant="-20" id="fVV-Ey-yQK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LUI-oy-KAR" secondAttribute="trailing" constant="-20" id="kri-qb-SbB"/>
+                            <constraint firstItem="LUI-oy-KAR" firstAttribute="top" secondItem="XqT-X0-eh8" secondAttribute="bottom" id="r04-rn-St1"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pAh-iX-JEK" userLabel="First Responder" sceneMemberID="firstResponder"/>
