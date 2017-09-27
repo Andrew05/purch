@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		20BDD4A4CBFBD4FC873B17B6 /* Pods_purchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7EC1EE225F695889CA41E2E /* Pods_purchTests.framework */; };
+		493DAEBE1D57F71900780E80 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493DAEBD1D57F71900780E80 /* MapViewController.swift */; };
 		49E258D81D0D01DB0030ABB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E258D71D0D01DB0030ABB9 /* AppDelegate.swift */; };
 		49E258DA1D0D01DB0030ABB9 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E258D91D0D01DB0030ABB9 /* LogInViewController.swift */; };
 		49E258DD1D0D01DB0030ABB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49E258DB1D0D01DB0030ABB9 /* Main.storyboard */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		0DAAA595F0305DBC2FEC19E2 /* Pods_purch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_purch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		493DAEBD1D57F71900780E80 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		49E258D41D0D01DB0030ABB9 /* purch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = purch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49E258D71D0D01DB0030ABB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49E258D91D0D01DB0030ABB9 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
@@ -80,7 +82,6 @@
 		493DAEB71D57D4D400780E80 /* Supporting FIles */ = {
 			isa = PBXGroup;
 			children = (
-				49E258D71D0D01DB0030ABB9 /* AppDelegate.swift */,
 				49E258E11D0D01DB0030ABB9 /* Assets.xcassets */,
 				49E258E61D0D01DB0030ABB9 /* Info.plist */,
 				49E258DE1D0D01DB0030ABB9 /* purch.xcdatamodeld */,
@@ -111,6 +112,8 @@
 		49E258D61D0D01DB0030ABB9 /* purch */ = {
 			isa = PBXGroup;
 			children = (
+				49E258D71D0D01DB0030ABB9 /* AppDelegate.swift */,
+				493DAEBD1D57F71900780E80 /* MapViewController.swift */,
 				49E258D91D0D01DB0030ABB9 /* LogInViewController.swift */,
 				493DAEB61D57D4C600780E80 /* StoryBoards */,
 				493DAEB71D57D4D400780E80 /* Supporting FIles */,
@@ -203,9 +206,12 @@
 				TargetAttributes = {
 					49E258D31D0D01DB0030ABB9 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 8JT57FQ3WC;
+						LastSwiftMigration = 0830;
 					};
 					49E258EA1D0D01DB0030ABB9 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0830;
 						TestTargetID = 49E258D31D0D01DB0030ABB9;
 					};
 				};
@@ -277,7 +283,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		69D9AB55B3F63E814B90F9EB /* [CP] Copy Pods Resources */ = {
@@ -322,7 +328,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		F8EB24FBE01B5C9E1B8F9722 /* [CP] Embed Pods Frameworks */ = {
@@ -350,6 +356,7 @@
 				49E258E01D0D01DB0030ABB9 /* purch.xcdatamodeld in Sources */,
 				49E258DA1D0D01DB0030ABB9 /* LogInViewController.swift in Sources */,
 				49E258D81D0D01DB0030ABB9 /* AppDelegate.swift in Sources */,
+				493DAEBE1D57F71900780E80 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,10 +486,14 @@
 			baseConfigurationReference = CC2CEF826EAEFC2EBBA565C1 /* Pods-purch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = purch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.andrew.purch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -491,10 +502,14 @@
 			baseConfigurationReference = 9B3D1246D6D745A32CB4BC60 /* Pods-purch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = purch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.andrew.purch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -507,6 +522,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.andrew.purchTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/purch.app/purch";
 			};
 			name = Debug;
@@ -520,6 +536,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.andrew.purchTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/purch.app/purch";
 			};
 			name = Release;
