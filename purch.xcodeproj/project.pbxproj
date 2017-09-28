@@ -89,6 +89,22 @@
 			name = "Supporting FIles";
 			sourceTree = "<group>";
 		};
+		4979924C1F7C537500C9190D /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				49E258D91D0D01DB0030ABB9 /* LogInViewController.swift */,
+			);
+			name = Authentication;
+			sourceTree = "<group>";
+		};
+		4979924D1F7C53BE00C9190D /* MapView */ = {
+			isa = PBXGroup;
+			children = (
+				493DAEBD1D57F71900780E80 /* MapViewController.swift */,
+			);
+			name = MapView;
+			sourceTree = "<group>";
+		};
 		49E258CB1D0D01DB0030ABB9 = {
 			isa = PBXGroup;
 			children = (
@@ -112,9 +128,9 @@
 		49E258D61D0D01DB0030ABB9 /* purch */ = {
 			isa = PBXGroup;
 			children = (
+				4979924C1F7C537500C9190D /* Authentication */,
+				4979924D1F7C53BE00C9190D /* MapView */,
 				49E258D71D0D01DB0030ABB9 /* AppDelegate.swift */,
-				493DAEBD1D57F71900780E80 /* MapViewController.swift */,
-				49E258D91D0D01DB0030ABB9 /* LogInViewController.swift */,
 				493DAEB61D57D4C600780E80 /* StoryBoards */,
 				493DAEB71D57D4D400780E80 /* Supporting FIles */,
 			);

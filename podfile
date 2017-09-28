@@ -6,7 +6,7 @@ target 'purch' do
   use_frameworks!
  
   pod 'GoogleMaps'
-  pod 'GooglePlacesAPI'
+  pod 'GooglePlaces'
   pod 'Firebase'
 
   target 'purchTests' do
