@@ -14,15 +14,27 @@ class JobPostViewController: UIViewController {
     @IBOutlet weak var payrateTextBox: UITextField!
     @IBOutlet weak var detailsTextBox: UITextField!
     
-    @IBOutlet weak var submitButton: UIBarButtonItem!
-    
+    @IBAction func submitButtonPressed(_ sender: Any) {
+        
+        if (inputIsCorrect() == true) {
+      
+        } else {
+            print("please input a number for payrate")
+        }
+        
+      
+    }
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         payrateTextBox.keyboardType = UIKeyboardType.numberPad
-        // Do any additional setup after loading the view.
-    }
+        
+        
+        payrateTextBox.addTarget(self, action: #selector(JobPostViewController.inputIsCorrect), for: UIControlEvents.editingChanged)
+       
+            }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -40,26 +52,23 @@ class JobPostViewController: UIViewController {
 
     }
     
+    
+    
     func inputIsCorrect() -> Bool {
         
         if (isNumber(inputText: payrateTextBox.text!) == true) {
-            print("success")
-            print("success")
-            print("success")
-            print("success")
-            print("success")
+            
+           
             return true
     }
+      
         return false
-        print("fail")
-        print("fail")
+        
 
-        print("fail")
-
-        print("fail")
-        print("fail")
+        
 
     }
+    
 
     /*
     // MARK: - Navigation

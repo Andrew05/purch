@@ -78,19 +78,44 @@
                             <constraint firstAttribute="trailingMargin" secondItem="CAh-wC-0pT" secondAttribute="trailing" constant="8" id="uK0-72-vee"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="mwj-NE-0NZ">
-                        <barButtonItem key="rightBarButtonItem" title="Submit" id="heP-xs-uzv"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="mwj-NE-0NZ"/>
                     <connections>
                         <outlet property="detailsTextBox" destination="QJT-va-d4Q" id="cCJ-H7-ebd"/>
                         <outlet property="jobPostTextBox" destination="Ofz-pu-DCg" id="ati-z5-sJN"/>
                         <outlet property="payrateTextBox" destination="CAh-wC-0pT" id="cXp-Xe-IBy"/>
-                        <outlet property="submitButton" destination="heP-xs-uzv" id="spG-JU-g2s"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GmI-7D-rXd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-296.80000000000001" y="-365.66716641679164"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="xuY-s1-L1n">
+            <objects>
+                <tableViewController id="PWn-mN-d5p" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="wbG-lg-yWw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="iRs-n7-7pH">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iRs-n7-7pH" id="Dbu-i0-Alx">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="PWn-mN-d5p" id="jMG-Zx-PoE"/>
+                            <outlet property="delegate" destination="PWn-mN-d5p" id="sCy-c9-3Uy"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LNA-jB-eQR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="660" y="-366"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="M9o-jb-6yV">
