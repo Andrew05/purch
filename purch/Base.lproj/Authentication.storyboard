@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cXA-gI-6do">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cXA-gI-6do">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -66,12 +66,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-384" y="-34"/>
+            <point key="canvasLocation" x="-524" y="-101"/>
         </scene>
-        <!--Sign Up View Controller-->
+        <!--Email Adress View Controller-->
         <scene sceneID="Xbc-hl-0oQ">
             <objects>
-                <viewController storyboardIdentifier="emailaddressView" id="lOs-qG-8DO" customClass="SignUpViewController" customModule="purch" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="emailaddressView" id="lOs-qG-8DO" customClass="EmailAdressViewController" customModule="purch" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="27m-zG-L6h"/>
                         <viewControllerLayoutGuide type="bottom" id="bIy-18-dcB"/>
@@ -88,6 +88,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RGN-7g-LAb">
                                 <rect key="frame" x="171.5" y="629" width="32" height="30"/>
                                 <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="l0I-Ou-srn" kind="show" id="mQR-mc-tT0"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -102,16 +105,18 @@
                     </view>
                     <connections>
                         <outlet property="emailAddressTextBox" destination="Bqm-km-R8m" id="J5F-LE-sbq"/>
+                        <outlet property="emailTextBox" destination="Bqm-km-R8m" id="Wry-o2-8rh"/>
+                        <outlet property="nextButton" destination="RGN-7g-LAb" id="h84-B2-Zdj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ABU-0J-tal" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="415" y="164"/>
         </scene>
-        <!--View Controller-->
+        <!--Details View Controller-->
         <scene sceneID="NTI-N7-ddT">
             <objects>
-                <viewController id="UsC-Pb-UJ6" sceneMemberID="viewController">
+                <viewController id="UsC-Pb-UJ6" customClass="DetailsViewController" customModule="purch" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WsZ-6w-xAm"/>
                         <viewControllerLayoutGuide type="bottom" id="WHe-7z-W5W"/>
@@ -141,8 +146,8 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aaa-Sl-sGe">
-                                <rect key="frame" x="135" y="629" width="105" height="30"/>
-                                <state key="normal" title="Almost There..."/>
+                                <rect key="frame" x="167" y="629" width="41" height="30"/>
+                                <state key="normal" title="Done!"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -163,10 +168,17 @@
                             <constraint firstItem="or8-aV-oQC" firstAttribute="top" secondItem="jKs-dm-2d8" secondAttribute="bottom" constant="10" id="phb-Y4-Tax"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="addressTextBox" destination="jKs-dm-2d8" id="eT3-RO-hHA"/>
+                        <outlet property="cityTextBox" destination="or8-aV-oQC" id="y1A-V8-TkK"/>
+                        <outlet property="finishButton" destination="aaa-Sl-sGe" id="Kc4-M9-cfW"/>
+                        <outlet property="postalCodeTextBox" destination="Fva-UJ-dE2" id="Z7i-mD-ezA"/>
+                        <outlet property="provinceTextBox" destination="bEZ-lJ-Cgh" id="NHX-W9-YyC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rkF-KU-tgD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1133" y="896"/>
+            <point key="canvasLocation" x="1143" y="947"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="mhq-aP-NHa">
@@ -260,10 +272,10 @@
             </objects>
             <point key="canvasLocation" x="-831" y="1411"/>
         </scene>
-        <!--View Controller-->
+        <!--Password View Controller-->
         <scene sceneID="aiL-cd-ttB">
             <objects>
-                <viewController id="l0I-Ou-srn" sceneMemberID="viewController">
+                <viewController id="l0I-Ou-srn" customClass="PasswordViewController" customModule="purch" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Xr2-6P-Jn6"/>
                         <viewControllerLayoutGuide type="bottom" id="tsH-3f-pmS"/>
@@ -283,8 +295,11 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dOH-zK-IPS">
-                                <rect key="frame" x="171.5" y="629" width="32" height="30"/>
-                                <state key="normal" title="Next"/>
+                                <rect key="frame" x="135.5" y="629" width="105" height="30"/>
+                                <state key="normal" title="Almost There..."/>
+                                <connections>
+                                    <segue destination="UsC-Pb-UJ6" kind="show" id="UMK-Ot-f5o"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -299,10 +314,15 @@
                             <constraint firstItem="EZz-W3-uXD" firstAttribute="leading" secondItem="dQN-a5-9wv" secondAttribute="leadingMargin" id="yf1-7R-OpR"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="confirmPasswordTextBox" destination="RS5-A3-d8Z" id="eqJ-so-Kdw"/>
+                        <outlet property="nextButton" destination="dOH-zK-IPS" id="On3-11-AUE"/>
+                        <outlet property="passwordTextBox" destination="EZz-W3-uXD" id="KjT-V9-KcF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QtX-N1-DhK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="415" y="896"/>
+            <point key="canvasLocation" x="414" y="947"/>
         </scene>
     </scenes>
 </document>

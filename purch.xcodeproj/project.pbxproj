@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		20BDD4A4CBFBD4FC873B17B6 /* Pods_purchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7EC1EE225F695889CA41E2E /* Pods_purchTests.framework */; };
+		49069A3E1FA29BFB003A5C89 /* EmailAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49069A3D1FA29BFB003A5C89 /* EmailAddressViewController.swift */; };
+		49069A401FA2A55E003A5C89 /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49069A3F1FA2A55E003A5C89 /* PasswordViewController.swift */; };
+		49069A421FA2A590003A5C89 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49069A411FA2A590003A5C89 /* DetailsViewController.swift */; };
 		493DAEBE1D57F71900780E80 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493DAEBD1D57F71900780E80 /* MapViewController.swift */; };
 		498A20131F968037006C00E9 /* JobPost.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 498A20121F968037006C00E9 /* JobPost.storyboard */; };
 		498A20731F9D43BA006C00E9 /* JobPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498A20721F9D43BA006C00E9 /* JobPostViewController.swift */; };
@@ -38,6 +41,9 @@
 
 /* Begin PBXFileReference section */
 		0DAAA595F0305DBC2FEC19E2 /* Pods_purch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_purch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49069A3D1FA29BFB003A5C89 /* EmailAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailAddressViewController.swift; sourceTree = "<group>"; };
+		49069A3F1FA2A55E003A5C89 /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
+		49069A411FA2A590003A5C89 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		493DAEBD1D57F71900780E80 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		498A20121F968037006C00E9 /* JobPost.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = JobPost.storyboard; sourceTree = "<group>"; };
 		498A20721F9D43BA006C00E9 /* JobPostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobPostViewController.swift; sourceTree = "<group>"; };
@@ -109,8 +115,11 @@
 			isa = PBXGroup;
 			children = (
 				49E258DB1D0D01DB0030ABB9 /* Authentication.storyboard */,
+				49069A3D1FA29BFB003A5C89 /* EmailAddressViewController.swift */,
 				49E258D91D0D01DB0030ABB9 /* LogInViewController.swift */,
 				49B1203B1F7C8971000F1677 /* IntroViewController.swift */,
+				49069A3F1FA2A55E003A5C89 /* PasswordViewController.swift */,
+				49069A411FA2A590003A5C89 /* DetailsViewController.swift */,
 				49B1203D1F7C898B000F1677 /* SignUpViewController.swift */,
 			);
 			name = Authentication;
@@ -394,6 +403,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49069A3E1FA29BFB003A5C89 /* EmailAddressViewController.swift in Sources */,
 				498A20731F9D43BA006C00E9 /* JobPostViewController.swift in Sources */,
 				49B1203C1F7C8971000F1677 /* IntroViewController.swift in Sources */,
 				49E258E01D0D01DB0030ABB9 /* purch.xcdatamodeld in Sources */,
@@ -401,6 +411,8 @@
 				49E258DA1D0D01DB0030ABB9 /* LogInViewController.swift in Sources */,
 				49E258D81D0D01DB0030ABB9 /* AppDelegate.swift in Sources */,
 				493DAEBE1D57F71900780E80 /* MapViewController.swift in Sources */,
+				49069A401FA2A55E003A5C89 /* PasswordViewController.swift in Sources */,
+				49069A421FA2A590003A5C89 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

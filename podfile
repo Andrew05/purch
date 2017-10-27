@@ -8,6 +8,7 @@ target 'purch' do
   pod 'GoogleMaps'
   pod 'GooglePlaces'
   pod 'Firebase'
+  pod 'Firebase/Auth'
 
   target 'purchTests' do
     inherit! :search_paths
