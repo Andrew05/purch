@@ -183,12 +183,12 @@
         <!--View Controller-->
         <scene sceneID="mhq-aP-NHa">
             <objects>
-                <viewController id="cXA-gI-6do" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AuthenticationViewController" id="cXA-gI-6do" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZXU-lI-kR6"/>
                         <viewControllerLayoutGuide type="bottom" id="hTW-KP-6rj"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="g1i-3l-2p9">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="AuthenticationViewController" id="g1i-3l-2p9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>

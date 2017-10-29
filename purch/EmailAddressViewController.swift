@@ -14,6 +14,10 @@ class EmailAdressViewController: UIViewController {
     
     @IBOutlet weak var nextButton: UIButton!
     
+    @IBAction func nextButtonPressed(_ sender: Any) {
+        
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

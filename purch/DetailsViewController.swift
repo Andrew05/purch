@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import FirebaseAuth
 
 class DetailsViewController: UIViewController {
     
@@ -20,6 +21,10 @@ class DetailsViewController: UIViewController {
     
     @IBOutlet weak var finishButton: UIButton!
     
+   
+    @IBAction func finishButtonWasPressed(_ sender: Any) {
+        createAccount(sender: self)
+    }
     var emailAddress: String? = nil
     var password: String? = nil
     var address: String? = nil
@@ -28,12 +33,15 @@ class DetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(emailAddress,password)
     }
     
-    func createAccount( email: String,  password: String) {
-        var email = email
-        var password = password
+    func createAccount( sender: AnyObject) {
+        if let email = emailAddress {
+            if let password = password {
+                Auth.auth().createUser(withEmail: email, password: password)
+            }
+        }
         
-//        Auth.auth().createUser(withEmail: email, password: password)
     }
 }

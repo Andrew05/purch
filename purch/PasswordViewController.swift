@@ -18,13 +18,14 @@ class PasswordViewController: UIViewController {
     @IBOutlet weak var nextButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+       
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToDetails" {
             if let controller: DetailsViewController = segue.destination as? DetailsViewController {
-                
-                controller.emailAddress = emailAddress
+               
+                controller.emailAddress = emailAddress!
                 controller.password = passwordTextBox.text
                 
             }
